@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/formDangKy.css">
+  </head>
+  <body> 
+    <section>
+      <form id="loginForm">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="js/formDangKy.js"></script>
+
+        <h1>Login</h1>
+        <div class="input-box">
+          <ion-icon name="mall-outline"></ion-icon>
+          <input type="email" id="email" required/>
+          <label for="">Email</label>
+        </div>
+        <div class="input-box">
+          <!-- <ion-icon name="mall-outline"></ion-icon> -->
+          <input type="username" id="username" required/>
+          <label for="">Tài khoản</label>
+        </div>
+        <div class="input-box">
+            <!-- <ion-icon name="lock-closed-outline"></ion-icon> -->
+            <input type="password" id = "password" required>
+            <label for="">Mật khẩu</label>
+        </div>
+        <div class="forget">
+            <label for=""><input type="checkbox">Nhớ mật khẩu</label>
+            <a href="#">Quên mật khẩu</a>
+        </div>
+        <button type="button" onclick="checkLogin()">Đăng nhập</button>
+        <div class="register">
+            <p>Chưa có tài khoản? <a href="formDangKy.html">Đăng ký</a></p>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

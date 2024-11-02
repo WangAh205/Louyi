@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louyi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Louyi</title>
+        <link rel="stylesheet" href="css/nguoidung.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="container">
+                <div class="header-top">
+                    <!-- Logo -->
+                    <div class="logo">Louyi</div>
+                    
+                    <!-- Thanh tìm kiếm -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+
+                    <!-- Danh mục -->
+                    <nav id="list">
+                        <ul>
+                            <li class="nav-li"><a href="index.html">Trang chủ</a></li>
+                            <li class="nav-li"><a href="san-pham.html">Sản phẩm</a></li>
+                            <li class="nav-li"><a href="introduce.html">Về chúng tôi</a></li>
+                            <li class="nav-li"><a href="Feedback.html">Feedback</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Đăng ký thông tin khách hàng -->
+                    <div id="sign">
+                        <ul>
+                            <li><a href="formDangNhap.html">Đăng nhập</a></li>
+                            <li><a href="formDangKy.html">Đăng ký</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+    
+    </html>
+    <div class="profile-container">
+            <h2>Thông tin cá nhân</h2>
+            <form id="profile-form">
+                <div class="avatar-main">
+                    
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="file-upload" accept="image/*">
+                        <label for="file-upload" class="custom-file-upload">Choose File</label>
+                        <span id="file-name">Chưa có file nào được chọn</span>
+                    </div>
+                    <div class="preview-container">
+                        <img id="preview-image" class="preview-image" src="" alt="">
+                        <span id="preview-text" class="preview-text">Xem trước</span>
+                    </div>            
+                </div>
+                
+            <div class="infor-main">
+                
+                <div class="info">
+                    <div class="infor-label" >
+                        <input type="text" id="ho ten">
+                        <label for="ho ten">Họ và tên</label>
+                    </div>
+                </div>
+            
+            <div class="info">
+                <div class="infor-label">
+                    <input type="number" id="tuoi">
+                    <label for="tuoi">Tuổi</label>
+                </div>
+            </div>
+            
+            <div class="info">
+                <div class="infor-label">
+                    <input type="text" id="address">
+                    <label for="address">Địa chỉ</label>
+                </div>
+            </div>
+            
+            <div class="info">
+                <div class="infor-label">
+                    <input type="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            
+            <div class="infor">
+                <div class="infor-label">
+                    <input type="number" id="so dien thoai">
+                    <label for="so dien thoai">Số điện thoại</label>
+                </div>
+            </div>
+            
+            <div class="infor">
+                <div class="infor-label">
+                    <input type="text" id="username">
+                    <label for="username">Username</label>  
+                </div>
+            </div>
+            
+            <div class="button-class">
+                <button class="save">Lưu thông tin</button>
+                <button class="logout">Đăng xuất</button>
+            </div>
+        </div>
+            <script src="js/nguoidung.js"></script>
+        </form>
+        </div>
+        <div class="showroom-under">
+        <!-- Đc website -->
+        <h2>HỆ THỐNG SHOWROOM TOÀN QUỐC</h2>
+        <section class="showrooms">
+            <div class="showroom">
+                <h3>Miền Bắc</h3>
+                <p>Địa chỉ: CNTT VA 1 - Cầu Giấy, Hà Nội</p>
+            </div>
+            <div class="showroom">
+                <h3>Miền Trung</h3>
+                <p>Địa chỉ: 3 Đ. Cầu Giấy, Ngọc Khánh, Đống Đa, Hà Nội, Việt Nam</p>
+            </div>
+            <div class="showroom">
+                <h3>Miền Nam</h3>
+                <p>Địa chỉ: 301 A8</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Về Louyi</h3>
+                    <p>Thiên trượng thiên hạ duy ngã độc tôn.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>Email: info@louyi.com</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

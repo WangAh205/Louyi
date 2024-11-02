@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: blanchedalmond;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: rgb(235, 206, 168);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    font-weight: bold;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    flex: 1;
+}
+
+.search-bar {
+    padding-left: 15px;
+    flex: 9;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: bisque;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    color: black;
+}
+
+nav {
+    align-items: center;
+}
+
+nav#list {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#sign {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#sign ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+#sign ul li {
+    margin-right: 20px;
+}
+
+#sign ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 40px 0;
+}
+
+h1 {
+    padding-top: 10px ;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-card {
+    width: 370px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-details {
+    margin-bottom: 15px;
+}
+
+.member-details p {
+    margin-bottom: 5px;
+}
+
+.member-slogan {
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #515151;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: calc(25% - 20px);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+.social-icons a:hover {
+    color: #e60012;
+}
+
+@media only screen and (max-width: 768px) {
+    .member-card {
+        width: 100%;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap; /* Cho phép xuống dòng */
+    }
+  
+    .category {
+      width: 30%; /* Mỗi phần tử chiếm 30% chiều rộng */
+      box-sizing: border-box; /* Để padding không làm chiều rộng vượt quá 100% */
+      padding: 10px; /* Thêm padding cho các phần tử */
+    }
+    .header-top {
+      flex-direction: column; /* Chuyển header thành hiển thị dọc */
+    }
+    #sign ul{
+        flex-direction: column;
+    }
+    nav ul {
+      margin: 5px;
+      flex-wrap: wrap; /* Gói gọn mục điều hướng trên điện thoại */
+      align-items: center;
+      display: flexbox;
+      padding: 0px 10px;
+    }
+    nav ul li{
+      margin: 10px 0; /* Khoảng cách giữa các mục điều hướng */
+    }
+    a{
+        margin: 0 7px ;
+    }
+    .footer-content {
+      flex-direction: column; /* Hiển thị các phần footer theo chiều dọc trên điện thoại */
+    }
+    .footer-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louyi</title>
+    <link rel="stylesheet" href="css/sanpham.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top row">
+                <!-- Logo -->
+                <div class="logo">Louyi</div>
+
+                <!-- Thanh tìm kiếm -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+
+                <!-- Danh mục -->
+                <nav id="list" class="row1">
+                    <ul>
+                        <li class="nav-li"><a href="index.html">Trang chủ</a></li>
+                        <li class="nav-li"><a href="#">Sản phẩm</a></li>
+                        <li class="nav-li"><a href="introduce.html">Về chúng tôi</a></li>
+                        <li class="nav-li"><a href="Feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Đăng ký thông tin khách hàng -->
+                <div id="sign" class="row">
+                    <ul>
+                        <li><a href="formDangNhap.html">Đăng nhập</a></li>
+                        <!-- <li><a href="#">|</a></li> -->
+                        <li><a href="formDangKy.html">Đăng ký</a></li>
+                        <li><a href="nguoidung.html">Tài khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Danh mục sản phẩm -->
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <div class="category-left">
+                    <ul>
+                        <!-- <li class="category-left-li"  onclick="toggleMenu(this)"><i class="fa-solid fa-pen"></i> BẢNG VIẾT CÁC LOẠI</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/Bang  viet/BANGVIET.html" id="menu2"></i> Tổng hợp</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG GHIM</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG KÍNH CAO CẤP</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG THÔNG BÁO - MENU</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG VIẾT BÚT LÔNG</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG VIẾT DI ĐỘNG</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BẢNG VIẾT PHẤN</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- <li class="category-left-li"  onclick="toggleMenu(this)"><i class="fa-solid fa-book"></i> BÌA CÁC LOẠI</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/Bia/BIA.html" id="menu2"></i> Tổng hợp</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA ACCO - BÌA BÁO CÁO</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA BAO TẬP</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA CÒNG</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA HỘP - CẶP 12 NGĂN</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA KẸP</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA LÁ</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA LỖ</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA NHẪN</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA NÚT</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> BÌA TRÌNH KÝ</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY BÌA MÀU</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="category-left-li"  onclick="toggleMenu(this)"><i class="fa-solid fa-paint-brush"></i> BÚT CÁC LOẠI</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/But/BUT.html" id="menu2"></i> Tổng hợp</a></li>
+                                <li><a href="SP/But/but bi.html"><i class="fa-solid fa-angle-right"></i> BÚT BI</a></li>
+                                <li><a href="SP/But/but chi.html"><i class="fa-solid fa-angle-right"></i> BÚT CHÌ</a></li>
+                                <li><a href="SP/But/but gel.html"><i class="fa-solid fa-angle-right"></i> BÚT GEL</a></li>
+                                <li><a href="SP/But/but long.html"><i class="fa-solid fa-angle-right"></i> BÚT LÔNG</a></li>
+                                <li><a href="SP/But/but xoa.html"><i class="fa-solid fa-angle-right"></i> BÚT XÓA</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-left-li" onclick="toggleMenu(this)"><i class="fa-solid fa-ruler"></i> DỤNG CỤ HỌC TẬP</a>
+                            <ul   id="menu1">
+                                <li><a href="SP/Dung cu hoc tap/DUNG CU HOC TAP.html" id="menu2"></i> Tổng hợp</a></li>
+                                <li><a href="SP/Dung cu hoc tap/ba lo hoc sinh.html"><i class="fa-solid fa-angle-right"></i> BA LÔ HỌC SINH</a></li>
+                                <li><a href="SP/Dung cu hoc tap/bo compa.html"><i class="fa-solid fa-angle-right"></i> Bộ COMPA</a></li>
+                                <li><a href="SP/Dung cu hoc tap/got chi.html"><i class="fa-solid fa-angle-right"></i> GỌT CHÌ</a></li>
+                                <li><a href="SP/Dung cu hoc tap/tay .html"><i class="fa-solid fa-angle-right"></i> GÔM - TẨY</a></li>
+                                <li><a href="SP/Dung cu hoc tap/hop viet.html"><i class="fa-solid fa-angle-right"></i> HỘP VIẾT - BÓP VIẾT</a></li>
+                                <li><a href="SP/Dung cu hoc tap/thuoc ke.html"><i class="fa-solid fa-angle-right"></i> THƯỚC - COMPA</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-left-li" onclick="toggleMenu(this)"><i class="fa-solid fa-headphones"></i> DỤNG CỤ VĂN PHÒNG</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/Dung cu van phong/DUNCUVANPHONG.html" id="menu2"></i> Tổng hợp</a></li>
+
+                                <li><a href="SP/Dung cu van phong/bam kim.html"><i class="fa-solid fa-angle-right"></i> BẤM KIM</a></li>
+                                <li><a href="SP/Dung cu van phong/bam lo.html"><i class="fa-solid fa-angle-right"></i> BẤM LỖ</a></li>
+                                <li><a href="SP/Dung cu van phong/bang keo.html"><i class="fa-solid fa-angle-right"></i> BĂNG KEO</a></li>
+                                <li><a href="SP/Dung cu van phong/bang ten.html"><i class="fa-solid fa-angle-right"></i> BẢNG TÊN</a></li>
+                                <li><a href="SP/Dung cu van phong/dao keo.html"><i class="fa-solid fa-angle-right"></i> DAO KÉO</a></li>
+                                <li><a href="SP/Dung cu van phong/tui dung ho so.html"><i class="fa-solid fa-angle-right"></i> KỆ ĐỰNG HỒ SƠ</a></li>
+                                <li><a href="SP/Dung cu van phong/kep giay.html"><i class="fa-solid fa-angle-right"></i> KẸP GIẤY</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="category-left-li" onclick="toggleMenu(this)"><i class="fa-solid fa-lightbulb"></i> GIẤY CÁC LOẠI</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/Giay cac loai/GIAY CAC LOAI.html" id="menu2"></i> Tổng hợp</a></li>
+
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY DOUBLE A</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY EXCEL</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY FLEXOFFICE</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY IDEA</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY IK COPY</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY IK PLUS</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY IN ẢNH</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY KIỂM TRA</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY NATURAL</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY NOTE</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i> GIẤY PAPER ONE</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="category-left-li" onclick="toggleMenu(this)"><i class="fas fa-sticky-note"></i> SỔ - TẬP CÁC LOẠI</a>
+                            <ul  id="menu1">
+                                <li><a href="SP/So tap cac loai/SO TAP CAC LOAI.html" id="menu2"></i> Tổng hợp</a></li>
+
+                                <li><a href="SP/So tap cac loai/so cao cap.html"><i class="fa-solid fa-angle-right"></i> SỔ CAO CẤP</a></li>
+                                <li><a href="SP/So tap cac loai/so caro.html"><i class="fa-solid fa-angle-right"></i> SỔ CARO</a></li>
+                                <li><a href="SP/So tap cac loai/so loxo.html"><i class="fa-solid fa-angle-right"></i> SỔ LÒ XO</a></li>
+                                <li><a href="SP/So tap cac loai/tap kho lon.html"><i class="fa-solid fa-angle-right"></i> TẬP KHỔ LỚN</a></li>
+                                <li><a href="SP/So tap cac loai/tap van phong.html"><i class="fa-solid fa-angle-right"></i> TẬP VĂN PHÒNG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-right row">
+                    <div class="category-right-img row">
+                        <div class="category-right-big-img row">
+                        <a href="SP/But/BUT.html">
+                            <img src="image/san-pham/1.jpg">
+                            <h1>BÚT CÁC LOẠI</h1>
+                        </a>
+                        </div>
+                        <div class="category-right-small-imgs row">
+                            <div class="category-right-small-img">
+                                <a href="SP/Dung cu hoc tap/DUNG CU HOC TAP.html">
+                                    <img src="image/san-pham/2.jpg">
+                                    <h1>DỤNG CỤ HỌC TẬP</h1>
+                                </a>
+                            </div>
+                            <div class="category-right-small-img">
+                                <a href="SP/Dung cu hoc tap/DUNG CU HOC TAP.html">
+                                <img src="image/san-pham/3.jpg">
+                                <h1>DỤNG CỤ HỌC TẬP</h1>
+                            </a>
+                            </div>
+                            <div class="category-right-small-img">
+                                <a href="SP/Dung cu van phong/DUNCUVANPHONG.html">
+                                    <img src="image/san-pham/4.jpg">
+                                    <h1>DỤNG CỤ VĂN PHÒNG</h1>
+                                </a>
+                            </div>
+                            <div class="category-right-small-img">
+                                <a href="SP/Dung cu van phong/DUNCUVANPHONG.html">
+
+                                    <img src="image/san-pham/5.jpg" alt="">
+                                    <h1>DỤNG CỤ VĂN PHÒNG</h1>
+                                </a>
+                            </div>
+                            <div class="category-right-small-img">
+                                <a href="SP/So tap cac loai/SO TAP CAC LOAI.html">
+
+                                    <img src="image/san-pham/6.jpg" alt="">
+                                    <h1>SỔ TẬP CÁC LOẠI</h1>
+                                </a>
+                            </div>
+                            <div class="category-right-small-img">
+                                <a href="SP/So tap cac loai/SO TAP CAC LOAI.html">
+                                    <img src="image/san-pham/7.jpg" alt="">
+                        
+                                    <h1>SỔ TẬP CÁC LOẠI</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Sản phẩm nổi bật -->
+     <main class="container">
+        <h2>Sản phẩm nổi bật</h2>
+        <section class="featured-products" id="featured-products">
+            <div class="product-cards">
+                <a href="SP/But/but bi.html" class="product-link">
+                    <img src="image/SP/but bi/TL095.jpg" alt="Bút bi" class="product-image">
+                    <h4 class="product-name">Bút bi</h4>
+                    <p class="rating">⭐ 4.5 (250 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/But/but chi.html" class="product-link">
+                    <img src="image/SP/but chi/STDTL12.jpg" alt="Bút chì" class="product-image">
+                    <h4 class="product-name">Bút chì</h4>
+                    <p class="rating">⭐ 4.0 (180 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/But/but gel.html" class="product-link">
+                    <img src="image/SP/but gel/G07.jpg" alt="Bút gel" class="product-image">
+                    <h4 class="product-name">Bút gel</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu hoc tap/ba lo hoc sinh.html" class="product-link">
+                    <img src="image/SP/ba lo hoc sinh/BL26.jpg" alt="Ba lô học sinh" class="product-image">
+                    <h4 class="product-name">Ba lô học sinh</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu hoc tap/bo compa.html" class="product-link">
+                    <img src="image/SP/bo compa/ACS90807.jpg" alt="Bộ compa" class="product-image">
+                    <h4 class="product-name">Bộ compa</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu hoc tap/may tinh.html" class="product-link">
+                    <img src="image/SP/may tinh/KK82MSD.jpg" alt="Máy tính" class="product-image">
+                    <h4 class="product-name">Máy tính</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu van phong/bang ten.html" class="product-link">
+                    <img src="image/SP/bang ten/BT1688.jpg" alt="Bảng tên" class="product-image">
+                    <h4 class="product-name">Bảng tên</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu van phong/bam kim.html" class="product-link">
+                    <img src="image/SP/bam kim/E206.jpg" alt="Bấm kim" class="product-image">
+                    <h4 class="product-name">Bấm kim</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/So tap cac loai/so cao cap.html" class="product-link">
+                    <img src="image/SP/so cao cap/SCC123.jpg" alt="Sổ cao cấp" class="product-image">
+                    <h4 class="product-name">Sổ cao cấp</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/So tap cac loai/so caro.html" class="product-link">
+                    <img src="image/SP/so caro/297.jpg" alt="Sổ caro" class="product-image">
+                    <h4 class="product-name">Sổ caro</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sản phẩm mới nhất -->
+     <main class="container">
+        <h2>Sản phẩm mới nhất</h2>
+        <section class="featured-products" id="featured-products">
+            <div class="product-cards">
+                <a href="SP/So tap cac loai/tap kho lon.html" class="product-link">
+                    <img src="image/SP/tap kho lon/VO3.jpg" alt="Tập khổ lớn" class="product-image">
+                    <h4 class="product-name">Tập khổ lớn</h4>
+                    <p class="rating">⭐ 4.5 (250 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/But/but xoa.html" class="product-link">
+                    <img src="image/SP/but xoa/W39292.jpg" alt="Bút xóa" class="product-image">
+                    <h4 class="product-name">Bút xóa</h4>
+                    <p class="rating">⭐ 4.0 (180 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu hoc tap/thuoc ke.html" class="product-link">
+                    <img src="image/SP/thuoc ke/6220.jpg" alt="Thước kẻ" class="product-image">
+                    <h4 class="product-name">Thước kẻ</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/So tap cac loai/tap van phong.html" class="product-link">
+                    <img src="image/SP/tap van phong/TVP123.jpg" alt="Tập văn phòng" class="product-image">
+                    <h4 class="product-name">Tập văn phòng</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+            </div>
+            <div class="product-cards">
+                <a href="SP/Dung cu van phong/tui dung ho so.html" class="product-link">
+                    <img src="image/SP/tui dung ho so/A4321.jpg" alt="Túi đựng hồ sơ" class="product-image">
+                    <h4 class="product-name">Túi đựng hồ sơ</h4>
+                    <p class="rating">⭐ 5.0 (300 đánh giá)</p>
+                </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Louyi</h3>
+                    <p>Thiên trượng thiên hạ duy ngã độc tôn.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>Email: info@louyi.com</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sanpham.js"></script>
+    
+</body>
+</html>

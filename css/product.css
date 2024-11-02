@@ -1,0 +1,25 @@
+a {
+  margin-left: 20px; /* Đặt khoảng cách bên trái là 20px */
+  text-decoration: none; /* Bỏ hiệu ứng gạch chân  */
+  color: black; /* Đặt màu chữ cho các liên kết là đen */
+}
+
+/* Loại bỏ màu tím khi đã click vào */
+a:visited {
+  color: black;
+}
+
+/* Loại bỏ màu xanh khi di chuột vào */
+a:hover {
+  color: black; 
+}
+
+ul {
+  list-style-type: none; /* Bỏ dấu chấm đầu dòng */
+}
+
+/* Lại bỏ hiệu ứng */
+a:active {
+  color: black; /* Không đổi màu khi đã bấm vào link */
+  text-decoration: none; /* Bỏ gạch chân khi di vào link */
+}

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến kích thước phần tử */
+}
+body {
+  font-family: Arial, sans-serif; /* Font mặc định */
+  line-height: 1.6; /* Khoảng cách dòng */
+  background-color: blanchedalmond; /* Màu vàng nhạt */
+}
+.container {
+  max-width: 1200px; /* Đặt chiều rộng tối đa của container */
+  margin: 0 auto; /* Căn giữa container */
+  padding: 10px 15px; /* Khoảng cách bên trong container */
+}
+header {
+  background-color: rgb(235, 206, 168); /* Màu nền của header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng cho header */
+  width: 100%; /* Chiều rộng header chiếm toàn trang */
+  top: 0; /* Đặt header ở trên cùng */
+  font-weight: bold;
+}
+.header-top {
+  display: flex; /* Hiển thị theo dạng ngang */
+  justify-content: space-between; /* Căn đều 2 bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 10px 0; /* Khoảng cách bên trong header */
+}
+.logo {
+  font-size: 24px; /* Kích thước chữ logo */
+  font-weight: bold; /* Đặt chữ logo đậm */
+  color: black; /* Màu chữ logo */
+  flex: 1; /* Tỉ lệ co giãn của logo trong layout flex */
+}
+.search-bar {
+  padding-left: 15px; /* Khoảng cách bên trái của thanh tìm kiếm */
+  flex: 9; /* Tỉ lệ co giãn của thanh tìm kiếm trong layout flex */
+  display: flex; /* Hiển thị theo dạng ngang */
+  width: 100%;
+  max-width: 1200px; /* Chiều rộng tối đa của thanh tìm kiếm */
+  margin: 0 auto; /* Căn giữa thanh tìm kiếm */
+}
+.search-bar input[type="text"] {
+  flex-grow: 1; /* Cho phép thanh tìm kiếm mở rộng */
+  padding: 8px 12px; /* Khoảng cách bên trong ô tìm kiếm */
+  border: 1px solid #ccc; /* Đặt viền ô tìm kiếm */
+  border-radius: 8px; /* Bo tròn các góc của ô tìm kiếm */
+  font-size: 16px; /* Kích thước chữ */
+}
+.search-bar button {
+  margin-left: 8px; /* Khoảng cách từ nút đến ô tìm kiếm */
+  padding: 8px 16px; /* Khoảng cách bên trong của nút */
+  background-color: bisque; /* Màu nền nút */
+  color: black; /* Màu chữ nút */
+  border: none; /* Không có viền */
+  border-radius: 4px; /* Bo tròn các góc của nút */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Đổi con trỏ chuột khi hover */
+}
+.search-bar button:hover {
+  color: black; /* Màu chữ khi hover vào nút */
+}
+nav {
+  align-items: center; /* Căn giữa các mục điều hướng theo chiều dọc */
+}
+nav#list {
+  margin-left: 20px; /* Khoảng cách giữa thanh tìm kiếm và navigation */
+}
+nav ul {
+  display: flex; /* Hiển thị các mục trong danh sách điều hướng theo chiều ngang */
+  list-style-type: none; /* Loại bỏ dấu chấm của danh sách */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+  padding: 0; /* Loại bỏ padding mặc định */
+}
+nav ul li {
+  margin-right: 20px; /* Khoảng cách giữa các mục điều hướng */
+}
+nav ul li a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới chữ */
+}
+#sign {
+  display: flex; /* Hiển thị theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-left: auto; /* Đẩy phần đăng nhập sang bên phải */
+}
+#sign ul {
+  display: flex; /* Hiển thị theo chiều ngang */
+  list-style-type: none; /* Loại bỏ dấu chấm của danh sách */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+#sign ul li {
+  margin-right: 20px; /* Khoảng cách giữa các mục đăng nhập */
+}
+#sign ul li a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới chữ */
+}
+
+h2 {
+  padding: 10px 0px; /* Khoảng cách trên và dưới cho tiêu đề */
+}
+.profile-container {
+  margin: 20px 40px;
+  padding: 17px;
+  border-radius: 10px;
+}
+form{
+  gap: 80px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.profile-container .infor-label{
+  padding: 5px;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+img .preview-image{
+  display: none;
+}
+.custom-file-upload{
+  display: inline-block;
+  padding: 6px 18px;
+  background-color: bisque;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+input[type="file"] {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+/* Tùy chỉnh phần xem trước ảnh */
+.preview-container {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.preview-text {
+  color: #666;
+  font-size: 14px;
+}
+.logout, .save{
+  background-color:steelblue;
+  flex-direction: row;
+  display: flex;
+  color:white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.logout:hover,
+.save:hover {
+  background-color:turquoise;
+}
+.button-class {
+  gap: 20px;
+  align-items: center;
+  display: flex; /* Sử dụng Flexbox */
+}
+
+.infor-label input{
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+a {
+  margin-left: 20px;
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: #333; /* Màu chữ */
+}
+a:visited {
+  color: #333; /* Màu chữ sau khi đã nhấp vào link */
+}
+a:hover {
+  color: black; /* Màu chữ khi di chuột */
+}
+ul {
+  list-style-type: none; /* Loại bỏ dấu chấm danh sách */
+}
+a:active {
+  color: #333; /* Màu chữ khi nhấp vào */
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+.showroom-under{
+  justify-content: space-around;
+  margin: 20px 40px;
+}
+.showrooms {
+  display: flex; /* Hiển thị showroom theo chiều ngang */
+  justify-content: space-between; /* Căn đều showroom */
+  margin: 40px 0; /* Khoảng cách giữa các phần */
+}
+.showroom {
+  width: calc(33.33% - 20px); /* Chiều rộng showroom */
+  background-color: #ffffffcf; /* Màu nền showroom */
+  padding: 20px; /* Khoảng cách bên trong showroom */
+  border-radius: 5px; /* Bo góc */
+  transition: background-color 0.3s ease; /* Hiệu ứng thay đổi màu nền khi hover */
+}
+.showroom:hover {
+  background-color: #e0e0e0; /* Màu nền khi hover */
+}
+footer {
+  background-color: #515151; /* Màu nền footer */
+  color: #fff; /* Màu chữ */
+  padding: 40px 0; /* Khoảng cách bên trong */
+}
+.footer-content {
+  display: flex; /* Hiển thị nội dung footer theo chiều ngang */
+  justify-content: space-between; /* Căn đều các phần footer */
+}
+
+.social-icons {
+  display: flex; /* Hiển thị icon mạng xã hội theo chiều ngang */
+  justify-content: flex-start; /* Căn trái */
+  margin-top: 10px; /* Khoảng cách trên của icon */
+  padding-left: 0;
+}
+.social-icons a {
+  padding-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.social-icons a:hover {
+  color: #e60012; /* Màu icon khi hover */
+}
+.social-icons a:active {
+  color: #fff;
+}
+
+a.facebook{
+  margin: 0px;
+}
+@media (max-width: 768px) {
+  form{
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng */
+  }
+  .profile-container{
+    margin: 0;
+  }
+  .category {
+    width: 150px; /* Mỗi phần tử chiếm 30% chiều rộng */
+    box-sizing: border-box; /* Để padding không làm chiều rộng vượt quá 100% */
+    padding: 10px; /* Thêm padding cho các phần tử */
+  }
+  .header-top {
+    flex-direction: column; /* Chuyển header thành hiển thị dọc */
+  }
+  nav ul {
+    margin: 5px;
+    flex-wrap: wrap; /* Gói gọn mục điều hướng trên điện thoại */
+    align-items: center;
+    display: flexbox;
+    padding: 0px 10px;
+  }
+  nav ul li {
+    margin: 10px 0; /* Khoảng cách giữa các mục điều hướng */
+  }
+  .showrooms {
+    flex-direction: column; /* Hiển thị showroom theo chiều dọc trên điện thoại */
+  }
+  .showroom {
+    width: 100%; /* Chiều rộng showroom chiếm hết trên điện thoại */
+    margin-bottom: 20px;
+  }
+  .footer-content {
+    flex-direction: column; /* Hiển thị các phần footer theo chiều dọc trên điện thoại */
+  }
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

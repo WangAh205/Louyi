@@ -1,0 +1,51 @@
+#slider {
+  padding: 50px 0px; /* Đặt khoảng cách trên dưới là 50px, không có khoảng cách trái phải */
+  height: auto; /* Đặt chiều cao của slider là 530px */
+  position: relative; /* Đặt vị trí của slider là relative để các phần tử con (như button) có thể định vị dựa trên nó */
+  margin: 0 auto; /* Tạo khoảng cách tự động trái phải, căn giữa slider trong bố cục */
+  width: 77%; /* Đặt chiều rộng của slider là 77% của phần tử cha */
+  max-width: 100vw;
+  overflow: hidden; /* Ẩn các phần của ảnh hoặc nội dung tràn ra ngoài khung của slider */
+}
+
+.aspect-ratio-169 {
+  display: flex; /* Đặt các ảnh trong slider nằm cạnh nhau theo hàng ngang */
+  transition: transform 0.5s ease; /* Tạo hiệu ứng chuyển động mượt mà*/
+}
+
+.aspect-ratio-169 img {
+  width: 100%; /* Đặt ảnh chiếm toàn bộ chiều rộng */
+  height: auto;
+  object-fit: cover;
+  /* flex-shrink: 0; Đảm bảo rằng ảnh không bị thu nhỏ khi có không gian hạn chế */
+}
+
+button {
+  opacity: 0;
+  position: absolute; /* Đặt vị trí của button là absolute */
+  top: 50%; /* Đặt vị trí top của button ở giữa chiều cao của slider */
+  transform: translateY(-50%); /* Dịch chuyển button lên trên nửa chiều cao */
+  background-color: rgba(0, 0, 0, 0.5); /*Đặt màu nền của button là đen với độ trong suốt 50% */ 
+  color: white; /* Đặt màu chữ của button là trắng */
+  border: none; /* Bỏ viền cho button */
+  padding: 10px; /* Đặt khoảng cách bên trong của button là 10px */
+  cursor: pointer; /* Đổi con trỏ chuột thành dạng tay khi di chuột lên button */
+  border-radius: 7px; /* Làm tròn các góc của button với bán kính 7px */
+}
+
+#prev {
+  left: 10px; /* Đặt vị trí bên trái của button lùi < là 10px từ lề trái của slider */
+}
+
+#next {
+  right: 10px; /* Đặt vị trí bên phải của button tiến > là 10px từ lề phải của slider */
+}
+
+#slider:hover button{
+  opacity: 0.7; /* Hiện nút với độ trong suốt */
+}
+
+#slider button:hover{
+  opacity: 1; /* Nút sẽ hiện đậm hơn khi hover trực tiếp vào nút */
+  background-color: rgba(0, 0, 0, 0.7); /* Màu nền đậm hơn khi hover */
+}

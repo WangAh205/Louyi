@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louyi - Feedback của khách hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Louyi</div>
+                <div class="search-bar"> 
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <nav id="list">
+                    <ul>
+                        <li class="nav-li"><a href="index.html">Trang chủ</a></li>
+                        <li class="nav-li"><a href="san-pham.html">Sản phẩm</a></li>
+                        <li class="nav-li"><a href="introduce.html">Về chúng tôi</a></li>
+                        <li class="nav-li"><a href="#">Feedback</a></li>
+                    </ul>
+                </nav>
+                <div id="sign"> 
+                    <ul>
+                        <li><a href="formDangNhap.html">Đăng nhập</a></li>
+                        <li><a href="formDangKy.html">Đăng ký</a></li>
+                        <li><a href="nguoidung.html">Tài khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="feedback-form">
+            <h2>Gửi đánh giá của bạn</h2>
+            <form id="feedbackForm">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Đánh giá:</label>
+                <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    <input type="radio" name="rating" value="2"><i></i>
+                    <input type="radio" name="rating" value="3"><i></i>
+                    <input type="radio" name="rating" value="4"><i></i>
+                    <input type="radio" name="rating" value="5"><i></i>
+                </span>
+
+                <label for="comment">Nhận xét:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+
+        <section class="feedback-list" id="feedbackList">
+            <div class="feedback-item">
+                <h3>Trịnh Trần Phương Tuấn</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>Trang web rất dễ sử dụng và có nhiều sản phẩm chất lượng. Mỗi tháng tôi đều dành ra 5tr để mua đồ tại Louyi, trải nghiệm rất tuyệt vời..</p>
+                <div class="shop-response">
+                    <strong>Louyi:</strong> Cảm ơn bạn đã tin tưởng và ủng hộ Louyi. Chúng tôi rất vui khi được phục vụ bạn và sẽ tiếp tục cải thiện để mang đến trải nghiệm tốt nhất.
+                </div>
+            </div>
+            <div class="feedback-item">
+                <h3>Trần Nguyễn Thiên An</h3>
+                <div class="rating">⭐⭐⭐</div>
+                <p>Sản phẩm đa dạng, giao diện đẹp. Tuy nhiên, cần cải thiện thêm về tốc độ tải trang.</p>
+                <div class="shop-response">
+                    <strong>Louyi:</strong> Cảm ơn bạn đã góp ý. Chúng tôi đang nỗ lực cải thiện tốc độ tải trang và hy vọng sẽ mang đến trải nghiệm tốt hơn trong thời gian tới.
+                </div>
+            </div>
+            <div class="feedback-item">
+                <h3>Trần Nguyễn Yên Đan</h3>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <p>Dịch vụ khách hàng khá tốt. Tôi gặp vấn đề với đơn hàng tuy vẫn được hỗ trợ nhưng hơi lâu. Đáng ra chỉ 3 sao thôi nhưng mà tôi không thích 3.</p>
+                <div class="shop-response">
+                    <strong>Louyi:</strong> Xin lỗi vì sự chậm trễ trong việc hỗ trợ bạn. Chúng tôi sẽ cố gắng cải thiện dịch vụ khách hàng để đáp ứng nhanh chóng hơn trong tương lai.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Louyi</h3>
+                    <p>Thiên trượng thiên hạ duy ngã độc tôn.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>Email: info@louyi.com</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>
