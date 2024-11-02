@@ -1,4 +1,3 @@
-Bài tập lớn môn thiết kế web
 Chủ đề: Thiết kế website quản lý bán hàng văn phòng phẩm
 
 Thành viên nhóm:
